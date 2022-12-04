@@ -14,6 +14,7 @@ for line in data:
     else:
         tmp.append(int(line[:-1]))
 
+
 # Gets the max of the lists and prints the max value
 # PART 1 :
 # maxi = 0
