@@ -24,7 +24,7 @@ def part1(calories):
     for i in calories:
         if sum(i) > maxi:
             maxi = sum(i)
-    print(maxi)
+    return maxi
 
 
 def part2(calories):
@@ -34,14 +34,16 @@ def part2(calories):
         t = sum(i)
         s.append(t)
     sort = sorted(s)
-    print(sum(sort[-3:]))
+    return sum(sort[-3:])
 
 
 def main():
     data = get_data()
     calories = get_calories(data)
-    part1(calories)
-    part2(calories)
+    res1 = part1(calories)
+    res2 = part2(calories)
+    print(f"Part 1: {res1}")
+    print(f"Part 2: {res2}")
 
 
 if __name__ == '__main__':
