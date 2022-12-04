@@ -1,6 +1,6 @@
 import string
 
-with open('day2.txt') as f:
+with open('../inputs/day2.txt') as f:
     data = f.readlines()
 
 # Removes the newline character from the end of each line

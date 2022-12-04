@@ -1,5 +1,5 @@
 # Opens the file and reads the data
-with open('day1.txt') as f:
+with open('../inputs/day1.txt') as f:
     data = f.readlines()
 
 # Removes the newline character from the end of each line
