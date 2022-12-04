@@ -19,6 +19,7 @@ def get_calories(data):
 
 
 def part1(calories):
+    """Returns the highest amount of calories"""
     maxi = 0
     for i in calories:
         if sum(i) > maxi:
@@ -27,6 +28,7 @@ def part1(calories):
 
 
 def part2(calories):
+    """Returns the sum of the top 3 amount of calories"""
     s = []
     for i in calories:
         t = sum(i)
